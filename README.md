@@ -86,12 +86,70 @@ $$m \ddot{x}(t) + d \dot{x}(t) + k x(t) = F(t)$$
 
 Esto simplemente dice que el movimiento de la masa depende de su propia inercia (la masa), la resistencia (el amortiguador), y qué tan rígido es el sistema (el resorte).
 
+## SISTEMA MASA RESORTE-AMORTIGUADOR
+
+El sistema masa-resorte-amortiguador es un modelo clásico en la mecánica que describe el comportamiento de un objeto (masa) que está sujeto a la acción de un resorte y un amortiguador. Este sistema es fundamental para entender cómo las fuerzas afectan el movimiento de objetos y cómo se disipa la energía en sistemas reales
+
+### Componentes principales:
+
+### 1. Masa (m): 
+Representa el objeto que se mueve bajo la influencia de las fuerzas del resorte y el amortiguador.
+
+### 2. Resorte (k): 
+Aplica una fuerza proporcional a la deformación del resorte, según la Ley de Hooke. Esta fuerza tiende a devolver la masa a su posición de equilibrio. La constante del resorte 
+k mide la rigidez del mismo.
+
+### 3. Amortiguador (d): 
+Representa la resistencia que disipa energía, como la fricción o un amortiguador real. Su función es reducir la velocidad del sistema con el tiempo. La fuerza de amortiguamiento es proporcional a la velocidad de la masa.
+
+### 4. Fuerza externa (F(t)): 
+Es cualquier fuerza que se aplique desde el exterior, como una fuerza constante o periódica.
+
+## Ecuación del movimiento:
+El comportamiento del sistema está descrito por la siguiente ecuación diferencial de segundo orden:
+$\[m \ddot{x}(t) + d \dot{x}(t) + k x(t) = F(t)\]$
+
+## Tipos de respuesta del sistema:
+Dependiendo de los valores de d, el sistema puede tener diferentes comportamientos:
+
+### 1. Subamortiguado: 
+Si la resistencia es baja, la masa oscila alrededor de la posición de equilibrio, pero eventualmente se detiene.
+### 2. Criticamente amortiguado: 
+La resistencia es tal que el sistema regresa a la posición de equilibrio lo más rápido posible sin oscilar.
+### 3. Sobreamortiguado: 
+Si la resistencia es muy alta, el sistema vuelve lentamente a la posición de equilibrio sin oscilar.
+
+## SISTEMAS ACOPLADOS 
+Los sistemas acoplados son aquellos en los que dos o más sistemas interactúan entre sí, influyendo mutuamente en su comportamiento. Estos sistemas están conectados de tal forma que el movimiento o la dinámica de un sistema afecta directamente al otro, lo que genera una relación interdependiente.
+
+### Características de los sistemas acoplados:
+
+### 1. Interacción: 
+Los sistemas no son independientes; las variables que describen uno de los sistemas influyen en las variables del otro.
+
+### 2. Ecuaciones interrelacionadas: 
+Las ecuaciones que describen cada sistema están vinculadas. Es decir, las ecuaciones diferenciales o algebraicas de un sistema contienen términos que dependen de las variables del otro sistema.
+
+### 3. Transferencia de energía: 
+Existe una transferencia de energía, fuerza o información entre los sistemas. Esto puede ser a través de fuerzas físicas (como una conexión elástica o un amortiguador) o señales eléctricas o de otro tipo.
+
+## Ecuaciones en sistemas acoplados:
+Las ecuaciones diferenciales que describen estos sistemas suelen ser de la forma:
+
+$\[m_1 \ddot{x}_1 + d_1 \dot{x}_1 + k_1 x_1 - k_2 (x_2 - x_1) = F_1(t)\]$
+
+$\[m_2 \ddot{x}_2 + d_2 \dot{x}_2 + k_2 (x_2 - x_1) = F_2(t)\]$
+
+Aquí, x 1​ y x 2 representan el desplazamiento de cada masa, k 2 es la constante del resorte que conecta las dos masas, y F1(t) y 𝐹2(t) son las fuerzas externas aplicadas a cada masa. Las ecuaciones están interrelacionadas porque el movimiento de una masa afecta directamente a la otra.
+
 
 # CONCLUCIONES
 
 En conclusion la transformada de laplace es una herramienta para simplificar el analisis de sistemas lineales, ya que convierte ecuaciones diferenciales en ecuaciones algebraicas 
 la transformada inversa de laplace nos permite regresar al dominio del tiempo una funcion que ha sido transformada al dominio de la frecuencia 
-en los sistemas mecanicos, la aplicacion de la transformada de laplace sismplificsa el analisis de fuerzas y movimientos, convirtirndo ecuaciones extensas en problemas de facil manejo  
+en los sistemas mecanicos, la aplicacion de la transformada de laplace sismplificsa el analisis de fuerzas y movimientos, convirtirndo ecuaciones extensas en problemas de facil manejo
+
+Al estudiar los sistemas acoplados y el sistema masa-resorte-amortiguador, me ha quedado claro cómo las pequeñas conexiones entre diferentes partes de un sistema pueden afectar enormemente su comportamiento global. Es interesante ver cómo algo tan cotidiano como un resorte o un amortiguador puede cambiar completamente la forma en que un objeto se mueve o responde a fuerzas externas.  
 
 ## REFERENCIAS
 
